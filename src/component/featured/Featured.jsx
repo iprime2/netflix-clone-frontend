@@ -52,7 +52,7 @@ const Featured = ({ type }) => {
       )}
       <img width='100%' src={content[0]?.img} alt='' />
       <div className='info'>
-        <img width='100%' src={content[0]?.imgTitle} alt='' />
+        <span className='title'>{content[0]?.title}</span>
         <span className='desc'>{content[0]?.desc}</span>
         <div className='buttons'>
           <button className='play'>

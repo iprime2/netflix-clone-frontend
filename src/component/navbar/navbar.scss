@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .navbar {
   width: 100%;
   color: white;
@@ -31,11 +33,25 @@
         width: 60px;
         height: 40px;
         margin-right: 10px;
+
+        @include mobile {
+          display: none;
+        }
       }
 
       span {
         margin-right: 20px;
         cursor: pointer;
+
+        @include tablet {
+          display: none;
+        }
+
+        &.navBarMainLinks {
+          @include tablet {
+            display: block;
+          }
+        }
       }
     }
 
@@ -59,20 +75,28 @@
       .profile {
         .options {
           display: none;
-          background-color: var(--min-color);
           border-radius: 15px;
         }
 
         span {
+          width: 100%;
           padding: 10px;
           cursor: pointer;
+
+          &:hover {
+            background-color: rgba(153, 151, 151, 0.511);
+          }
         }
 
         &:hover {
           .options {
+            padding: 10px;
+            margin-right: 10px;
+            background-color: black;
             display: flex;
             flex-direction: column;
             position: absolute;
+            gap: 5px;
           }
         }
       }

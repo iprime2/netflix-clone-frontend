@@ -19,7 +19,9 @@ const Home = ({ type }) => {
             }`,
           {
             headers: {
-              token: JSON.parse(localStorage.getItem('user')).accessToken,
+              token:
+                'Bearer ' +
+                JSON.parse(localStorage.getItem('user')).accessToken,
             },
           }
         )
@@ -31,6 +33,8 @@ const Home = ({ type }) => {
 
     getRandomLists()
   }, [type, genre])
+
+  console.log(lists)
 
   return (
     <div className='home'>

@@ -4,6 +4,7 @@ import Home from './pages/home/Home'
 import Login from './pages/login/Login'
 import Register from './pages/register/Register'
 import Watch from './pages/watch/Watch'
+import Logout from './pages/Logout/logout'
 import {
   BrowserRouter as Router,
   Routes,
@@ -30,6 +31,7 @@ const App = () => {
             <Route path='/watch' element={<Watch />} />
           </>
         )}
+        <Route path='/logout' element={<Logout />} />
       </Routes>
     </Router>
   )
