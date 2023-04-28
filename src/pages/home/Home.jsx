@@ -14,13 +14,12 @@ const Home = ({ type }) => {
       try {
         const res = await axios.get(
           process.env.REACT_APP_API_URL +
-            `list${type ? '?type' + type : ''}${
+            `lists${type ? '?type' + type : ''}${
               genre ? '&genre=' + genre : ''
             }`,
           {
             headers: {
-              token:
-                'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjdkODcwNGE5MmM1NmFhZmFlM2Y0YyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDQ1NDk2NiwiZXhwIjoxNjgwODg2OTY2fQ.Ul8EKCreMLd43qpAV9dd1Btu1ZKeTkWXv1v3BkJJ5hY',
+              token: JSON.parse(localStorage.getItem('user')).accessToken,
             },
           }
         )
