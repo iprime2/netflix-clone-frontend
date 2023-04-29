@@ -7,6 +7,8 @@ import { useState } from 'react'
 import { useRef } from 'react'
 import ListItem from '../listItem/ListItem'
 import './list.scss'
+import Skeleton from '@mui/material/Skeleton'
+import Stack from '@mui/material/Stack'
 
 const List = ({ list }) => {
   const [slideNumber, setSlideNumber] = useState(0)
@@ -28,6 +30,7 @@ const List = ({ list }) => {
   }
   return (
     <div className='list'>
+      <Skeleton variant='rectangular' width={210} height={60} />
       <span className='listTitle'>{list.title}</span>
       <div className='wrapper'>
         <ArrowBackIosOutlined

@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className='container'>
         <div className='left'>
           <img
-            src='https://toppng.com/uploads/preview/netflix-logo-png-transparent-background-11660600823gtbvgvxet0.png'
+            src='https://static.vecteezy.com/system/resources/previews/017/396/804/non_2x/netflix-mobile-application-logo-free-png.png'
             alt=''
           />
           <Link to='/' className='link'>
