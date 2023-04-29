@@ -10,13 +10,14 @@ import {
   Routes,
   Route,
   Navigate,
+  HashRouter,
 } from 'react-router-dom'
 import { AuthContext } from './context/authContext/AuthContext'
 
 const App = () => {
   const { user } = useContext(AuthContext)
   return (
-    <Router>
+    <HashRouter>
       <Routes>
         <Route exact path='/' element={user ? <Home /> : <Register />} />
         <Route path='/login' element={user ? <Navigate to='/' /> : <Login />} />
@@ -33,7 +34,7 @@ const App = () => {
         )}
         <Route path='/logout' element={<Logout />} />
       </Routes>
-    </Router>
+    </HashRouter>
   )
 }
 
