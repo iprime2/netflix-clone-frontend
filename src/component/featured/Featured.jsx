@@ -14,10 +14,12 @@ const Featured = ({ type }) => {
           {
             headers: {
               token:
-                'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MjdkODcwNGE5MmM1NmFhZmFlM2Y0YyIsImlzQWRtaW4iOnRydWUsImlhdCI6MTY4MDQ1NDk2NiwiZXhwIjoxNjgwODg2OTY2fQ.Ul8EKCreMLd43qpAV9dd1Btu1ZKeTkWXv1v3BkJJ5hY',
+                'Bearer ' +
+                JSON.parse(localStorage.getItem('user')).accessToken,
             },
           }
         )
+        console.log(res)
         setContent(res.data)
       } catch (error) {
         console.log(error)
