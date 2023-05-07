@@ -1,3 +1,17 @@
+######################################################################################
+
+I have created this movies streaming webapp by using MERN Stack.
+
+Basically it is the Netflix clone, you can create new user, watch movies & Tv series, search movies & tv series by selecting the genre.
+
+I am still working on this project to add new features like updating profile picture, user details, forget password, movie recommendation and many more.
+
+Link to my webapp: https://sushil-netflix-clone-admin.on.fleek.co/
+
+You can take a look at my webapp by clicking the link above.
+
+######################################################################################
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
