@@ -1,14 +1,19 @@
-import { useRef } from 'react'
+import { useContext, useRef } from 'react'
 import { useState } from 'react'
 import './register.scss'
-import axios from 'axios'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../context/authContext/AuthContext'
+import CircularProgress from '@mui/material/CircularProgress'
+import { register } from '../../context/authContext/apicalls'
 
 export default function Register() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [username, setUsername] = useState('')
   const [flag, setFlag] = useState(false)
+  const { isFetching, dispatch, error, success } = useContext(AuthContext)
+
+  console.log(success)
 
   const history = useNavigate()
 
@@ -24,12 +29,14 @@ export default function Register() {
     e.preventDefault()
 
     try {
-      await axios.post(process.env.REACT_APP_API_URL + 'auth/register', {
-        email,
-        password,
-        username,
-      })
-      history('/login')
+      register(
+        {
+          email,
+          password,
+          username,
+        },
+        dispatch
+      )
     } catch (error) {
       console.log(error)
     }
@@ -43,7 +50,9 @@ export default function Register() {
             src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png'
             alt=''
           />
-          <button className='loginButton'>Sign In</button>
+          <Link to='/login' style={{ textDecoration: 'none' }}>
+            <span className='loginButton'>Sign In</span>
+          </Link>
         </div>
       </div>
       <div className='container'>
@@ -85,9 +94,29 @@ export default function Register() {
               }}
             />
             <button className='registerButton' onClick={handleFinish}>
-              Start
+              {isFetching ? (
+                <CircularProgress
+                  color='inherit'
+                  style={{ fontSize: '12px' }}
+                />
+              ) : (
+                'Start'
+              )}
             </button>
           </form>
+        )}
+        <br />
+        {error && (
+          <span style={{ color: 'red', fontWeight: 'bold', fontSize: '22px' }}>
+            Something Went Wrong
+          </span>
+        )}
+        {success && (
+          <span
+            style={{ color: 'green', fontWeight: 'bold', fontSize: '22px' }}
+          >
+            Account Created
+          </span>
         )}
       </div>
     </div>

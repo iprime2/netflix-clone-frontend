@@ -13,6 +13,7 @@ import {
   HashRouter,
 } from 'react-router-dom'
 import { AuthContext } from './context/authContext/AuthContext'
+import Profile from './pages/profile/Profile'
 
 const App = () => {
   const { user } = useContext(AuthContext)
@@ -30,6 +31,7 @@ const App = () => {
             <Route path='/movies' element={<Home type='movies' />} />
             <Route path='/series' element={<Home type='series' />} />
             <Route path='/watch' element={<Watch />} />
+            <Route path='/profile' element={<Profile />} />
           </>
         )}
         <Route path='/logout' element={<Logout />} />

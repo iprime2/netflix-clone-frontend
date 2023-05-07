@@ -2,11 +2,13 @@ import { useContext, useState } from 'react'
 import './login.scss'
 import { login } from '../../context/authContext/apicalls'
 import { AuthContext } from '../../context/authContext/AuthContext'
+import { Link } from 'react-router-dom'
+import CircularProgress from '@mui/material/CircularProgress'
 
 export default function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
-  const { dispatch } = useContext(AuthContext)
+  const { dispatch, isFetching, error } = useContext(AuthContext)
 
   const handleLogin = async (e) => {
     e.preventDefault()
@@ -41,11 +43,15 @@ export default function Login() {
             }}
           />
           <button className='loginButton' onClick={handleLogin}>
-            Sign In
+            {isFetching ? <CircularProgress /> : 'Sign In'}
           </button>
           <span>
-            New to Netflix? <b>Sign up now.</b>
+            New to Netflix?
+            <Link to='/register' className='signUp'>
+              <b> Sign up now.</b>
+            </Link>
           </span>
+          {error && <span style={{ color: 'red' }}>Something Went Wrong</span>}
           <small>
             This page is protected by Google reCAPTCHA to ensure you're not a
             bot. <b>Learn more</b>.

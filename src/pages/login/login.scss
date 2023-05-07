@@ -70,8 +70,17 @@
 
       span {
         color: lightgray;
+
+        .signUp {
+          text-decoration: none;
+        }
+
         b {
           color: white;
+
+          &:hover {
+            color: rebeccapurple;
+          }
         }
       }
     }
