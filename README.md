@@ -6,12 +6,12 @@ Basically it is the Netflix clone, you can create new user, watch movies & Tv se
 
 I am still working on this project to add new features like updating profile picture, user details, forget password, movie recommendation and many more.
 
-Link to my webapp: https://sushil-netflix-clone-admin.on.fleek.co/
+Link to my webapp: https://sushil-netflix-clone.on.fleek.co
 
-![Screenshot](netflix-admin-edit.png)
-![Screenshot](netflix-admin-movies.png)
-![Screenshot](netflix-admin-new.png)
-![Screenshot](netflix-admin.png)
+![Screenshot](netflix-login.png)
+![Screenshot](netflix-main.png)
+![Screenshot](netflix-main2.png)
+![Screenshot](netflix-signup.png)
 
 You can take a look at my webapp by clicking the link above.
 
