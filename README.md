@@ -6,6 +6,8 @@ Basically it is the Netflix clone, you can create new user, watch movies & Tv se
 
 I am still working on this project to add new features like updating profile picture, user details, forget password, movie recommendation and many more.
 
+You can take a look at my webapp by clicking the link below.
+
 Link to my webapp: https://sushil-netflix-clone.on.fleek.co
 
 ![Screenshot](netflix-login.png)
@@ -13,7 +15,7 @@ Link to my webapp: https://sushil-netflix-clone.on.fleek.co
 ![Screenshot](netflix-main2.png)
 ![Screenshot](netflix-signup.png)
 
-You can take a look at my webapp by clicking the link above.
+
 
 ######################################################################################
 
