@@ -8,6 +8,11 @@ I am still working on this project to add new features like updating profile pic
 
 Link to my webapp: https://sushil-netflix-clone-admin.on.fleek.co/
 
+![Screenshot](netflix-admin-edit.png)
+![Screenshot](netflix-admin-movies.png)
+![Screenshot](netflix-admin-new.png)
+![Screenshot](netflix-admin.png)
+
 You can take a look at my webapp by clicking the link above.
 
 ######################################################################################
