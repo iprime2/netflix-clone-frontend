@@ -33,11 +33,10 @@ git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
 ### Install packages
 
 ```shell
-yarn i
+yarn 
 ```
 
 ### Setup .env file
-
 
 ```js
 DATABASE_URL=
@@ -51,7 +50,7 @@ NEXTAUTH_SECRET=
 ### Start the app
 
 ```shell
-yarn run
+yarn run start
 ```
 
 ## Available commands
