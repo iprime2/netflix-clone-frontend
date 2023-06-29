@@ -36,17 +36,6 @@ git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
 yarn 
 ```
 
-### Setup .env file
-
-```js
-DATABASE_URL=
-GOOGLE_CLIENT_ID=
-GOOGLE_CLIENT_SECRET=
-GITHUB_ID=
-GITHUB_SECRET=
-NEXTAUTH_SECRET=
-```
-
 ### Start the app
 
 ```shell
