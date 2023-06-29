@@ -1,91 +1,63 @@
-######################################################################################
+# Full Stack Netflix Clone MERN Stack : MangoDB, ExpressJs, React, NeodeJS
 
-I have created this movies streaming webapp by using MERN Stack.
+### Feature
 
-Basically it is the Netflix clone, you can create new user, watch movies & Tv series, search movies & tv series by selecting the genre.
+- Sign up and login
+- Watch movies and TV series
+- Filter movies and TV series with a specific genre
 
-I am still working on this project to add new features like updating profile picture, user details, forget password, movie recommendation and many more.
+### upcoming feature
 
-You can take a look at my webapp by clicking the link below.
+- update profile picture
+- update user details
+- forget password
+- movie recommendation for user
 
-Link to my webapp: https://sushil-netflix-clone.on.fleek.co
+### https://sushil-netflix-clone.on.fleek.co
 
 ![Screenshot](netflix-login.png)
 ![Screenshot](netflix-main.png)
 ![Screenshot](netflix-main2.png)
 ![Screenshot](netflix-signup.png)
 
+### Prerequisites
+
+**Node version 14.x**
+
+### Cloning the repository
+
+```shell
+git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
+```
+
+### Install packages
+
+```shell
+yarn i
+```
+
+### Setup .env file
 
 
-######################################################################################
+```js
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_SECRET=
+```
 
-# Getting Started with Create React App
+### Start the app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```shell
+yarn run
+```
 
-## Available Scripts
+## Available commands
 
-In the project directory, you can run:
+Running commands with yarn `yarn run [command]`
 
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| command         | description                              |
+| :-------------- | :--------------------------------------- |
+| `dev`           | Starts a development instance of the app |
