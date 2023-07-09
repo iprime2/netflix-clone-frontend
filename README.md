@@ -6,11 +6,10 @@
 - Watch movies and TV series
 - Filter movies and TV series with a specific genre
 
-### upcoming feature
+### Upcoming feature
 
-- update profile picture
-- update user details
-- forget password
+- update profile picture and user details
+- reset password
 - movie recommendation for user
 
 ### https://sushil-netflix-clone.on.fleek.co
@@ -27,7 +26,7 @@
 ### Cloning the repository
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next13-airbnb-clone.git
+git clone https://github.com/iprime2/netflix-clone-frontend
 ```
 
 ### Install packages
