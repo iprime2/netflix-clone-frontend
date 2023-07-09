@@ -2,14 +2,17 @@
 
 ### Feature
 
-- Sign up and login
+- Full responsiveness
+- Slider movies or tv series list
 - Watch movies and TV series
 - Filter movies and TV series with a specific genre
+- Sign up and login 
 
 ### Upcoming feature
 
 - update profile picture and user details
 - reset password
+- Add movie or tv series to your list
 - movie recommendation for user
 
 ### https://sushil-netflix-clone.on.fleek.co
@@ -47,4 +50,4 @@ Running commands with yarn `yarn run [command]`
 
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| `build`         | Build the webapp                         |
