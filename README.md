@@ -1,4 +1,4 @@
-# MERN Stack Netflix Clone with MangoDB, Express.js, React, Node.js, Express.js, SASS, and Material UI
+# MERN Stack Facebook Clone with React, Node.js, Express.js, Axios, React Router, MangoDB, SASS, and Material UI
 
 ### https://sushil-netflix-clone.on.fleek.co
 
