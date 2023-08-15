@@ -1,4 +1,6 @@
-# MERN Stack Netflix Clone with MangoDB, Express.js, React, Node.js, Express.js, SASS, and Material UI.
+# MERN Stack Netflix Clone with MangoDB, Express.js, React, Node.js, Express.js, SASS, and Material UI
+
+### https://sushil-netflix-clone.on.fleek.co
 
 ### Feature
 
@@ -14,8 +16,6 @@
 - reset password
 - Add movie or tv series to your list
 - movie recommendation for user
-
-### https://sushil-netflix-clone.on.fleek.co
 
 ![Screenshot](netflix-login.png)
 ![Screenshot](netflix-main.png)
