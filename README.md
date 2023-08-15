@@ -1,4 +1,4 @@
-# MERN Stack Netflix Clone with MangoDB, Express.js, React, Neode.js, SASS, and Material UI.
+# MERN Stack Netflix Clone with MangoDB, Express.js, React, Node.js, Express.js, SASS, and Material UI.
 
 ### Feature
 
